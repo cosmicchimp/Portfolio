@@ -1,0 +1,155 @@
+.landing-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.header-subtitle {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-container {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-content {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-image {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.project-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-github {
+  background: #333;
+}
+
+.btn-demo {
+  background: #667eea;
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-btn:hover {
+  background: #5568d3;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot-active {
+  background: #667eea;
+}
+
+.footer {
+  margin-top: 60px;
+  text-align: center;
+  color: white;
+}
+
+.footer p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+.project-image {
+    width:8rem;
+    object-fit: contain;
+    border-radius:5px
+}
