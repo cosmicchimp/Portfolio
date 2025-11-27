@@ -9,16 +9,15 @@
 .about-photo {
     width:13rem;
     height:18rem;
-    border-radius:5px;
+    border-radius:20px;
     margin-top:10rem;
 }
 .arrowLogo {
     width:2rem;
-    padding-top:.5rem;
     animation:hover 3000ms ease-in-out infinite;
-    transition: opacity 1s ease-out, transform 1s ease-out;
-    transform:translateY(-30px);
-    opacity:0;
+    padding-bottom:20rem;
+    opacity:1;
+    margin-bottom:15rem;
 }
 .aboutWrapper h1 {
     font-size:2rem;
@@ -44,7 +43,6 @@
     transition: opacity 1s ease-out, transform 1s ease-out, background-color .5s ease-in, color ease-in .5s;
     transform:translateY(-30px);
     font-weight:600;
-    margin-bottom:15rem;
 }
 .projectBtn:hover {
     background-color:white;

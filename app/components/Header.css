@@ -22,6 +22,7 @@ Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     border:1px solid white;
     border-radius:5px;
     margin-top:6rem;
+    margin-bottom:1.5rem;
     width:9rem;
     opacity:0;
     transition: opacity 1s ease-out, transform 1s ease-out, background-color .5s ease-in, color ease-in .5s;
