@@ -50,3 +50,13 @@
     background-color:white;
     color:#6a1cb8;
 }
+@media screen and (max-width:720px) {
+    .aboutBody {
+    width:70vw !important;
+    }
+}
+@media screen and (max-height:725px) {
+    .about-photo {
+    margin-top:15rem !important;
+}
+}
