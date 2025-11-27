@@ -5,6 +5,9 @@
   import './page.css';
   import Header from "./components/Header";
   import Typewriter from './components/Typewriter';
+  import About from './components/About';
+  import StickyHeader from './components/StickyHeader';
+  import FadeInOnScroll from './components/FadeInScroll';
   interface Project {
     title: string;
     description: string;
@@ -63,6 +66,7 @@
     return (
       <div className="landing-page">
         <Header />
+        <About/>
         <div className="carousel-container">
           <div className="carousel-card">
             <div className="project-content">

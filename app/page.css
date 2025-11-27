@@ -1,10 +1,8 @@
 .landing-page {
-  min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(180deg, #bb30fb 0%, #6a1cb8 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 20px;
 }
 
@@ -40,6 +38,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top:5rem;
 }
 
 .project-content {

@@ -3,18 +3,51 @@
 import { useState, useEffect } from 'react';
 import './Header.css';
 import Typewriter from './Typewriter';
+
 export default function Header() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isBtnVisible, setBtnIsVisible] = useState(false);
 
   useEffect(() => {
     // Trigger fade-in after component mounts
     setTimeout(() => setIsVisible(true), 100);
   }, []);
+  
+  useEffect(() => {
+    // Trigger fade-in after component mounts
+    setTimeout(() => setBtnIsVisible(true), 3000);
+  }, []);
+
+  const scrollToAbout = () => {
+    const aboutSection = document.querySelector('.aboutWrapper');
+    aboutSection?.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start' 
+    });
+  };
 
   return (
     <header className={`header ${isVisible ? 'header-visible' : ''}`}>
       <h1 className="header-title">Max Lambert</h1>
-              <Typewriter speed={100} text="Full-Stack Engineer & Cloud Architect  " className='typewriter' cursorChar={`|`}/>
+      <Typewriter 
+        speed={100} 
+        text="Full-Stack Engineer & Cloud Architect  " 
+        className='typewriter' 
+        cursorChar={`|`}
+      />
+      <br/>
+      <div 
+        className={`viewBtn ${isBtnVisible ? 'viewBtn-visible' : ''}`}
+        onClick={scrollToAbout}
+      >
+        View My Work
+      </div>
+      <img 
+        src={"./downarrow.svg"} 
+        className={`arrowLogo ${isBtnVisible ? 'arrowLogo-visible' : ''}`}
+        onClick={scrollToAbout}
+        alt="Scroll down"
+      />
     </header>
   );
 }

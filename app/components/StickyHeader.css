@@ -1,0 +1,23 @@
+.stickyHeader {
+    position: sticky;
+    width:100vw;
+    top:0;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgb(27, 27, 27);
+    z-index: 999;
+    margin-bottom:5rem;
+}
+.linkBox {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    margin-right:6rem;
+}
+.link {
+    font-size:1rem;
+}

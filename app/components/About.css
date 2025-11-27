@@ -1,0 +1,43 @@
+.aboutWrapper {
+    display:flex;
+    flex-direction: column;
+    height:170vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.about-photo {
+    width:13rem;
+    height:18rem;
+    border-radius:5px;
+}
+.aboutWrapper h1 {
+    font-size:2rem;
+    text-align:center;
+    padding:1.5rem;
+}
+.aboutWrapper h2 {
+    font-size:1rem;
+}
+.aboutBody {
+    width:50vw;
+    text-align: center;
+    line-height:1.7rem;
+}
+.projectBtn {
+    padding:1rem;
+    text-align:center;
+    background-color: transparent;
+    border:1px solid white;
+    border-radius:5px;
+    margin-top:5rem;
+    width:9rem;
+    transition: opacity 1s ease-out, transform 1s ease-out, background-color .5s ease-in, color ease-in .5s;
+    transform:translateY(-30px);
+    font-weight:600;
+    margin-bottom:15rem;
+}
+.projectBtn:hover {
+    background-color:white;
+    color:#6a1cb8;
+}
