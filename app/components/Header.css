@@ -10,7 +10,7 @@ Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   transform: translateY(-30px);
   transition: opacity 1s ease-out, transform 1s ease-out;
   height:140vh;
-  margin-top:30vh;
+  margin-top:20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
