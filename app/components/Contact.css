@@ -62,10 +62,10 @@
 
 @media screen and (max-width:500px) {
     .contactTitle {
-        font-size:45px;
+        font-size:40px;
     }
     .contactBar {
-        width:24rem;
+        width:21rem;
         top:-33px;
         left:16px;
     }
