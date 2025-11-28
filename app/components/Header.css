@@ -6,7 +6,7 @@
 
 /* Header container */
 .header {
-  height: 140vh;
+  height: 230vh;
   margin-top: 20vh;
   margin-bottom: 70px;
   text-align: center;
@@ -79,6 +79,7 @@
   opacity: 1;                     /* fade in */
   transform: translateY(0);       /* move to final position */
   animation: hover 3s ease-in-out infinite;
+    margin-bottom:90rem;
 }
 
 /* Floating animation */
