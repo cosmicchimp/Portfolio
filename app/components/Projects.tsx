@@ -19,13 +19,13 @@ const projects: Project[] = [
     demo: "https://squarescaninc.com/",
     image: "/IMG_9080.jpg",
   },
-  {
-    title: "BingeByte",
-    description: "React-based mock storefront with items and a purchasing process.",
-    github: "https://github.com/cosmicchimp/BingeByte",
-    demo: "https://binge-byte.vercel.app/",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Eo_circle_blue_letter-b.svg/2048px-Eo_circle_blue_letter-b.svg.png",
+    {
+    title: "Portfolio Builder",
+    description:
+      "A personal resume builder that allows you to create and download a custom resume.",
+    github: "https://github.com/cosmicchimp/cv-builder",
+    demo: "https://cosmiccvbuilder.vercel.app/",
+    image: "https://www.freeiconspng.com/uploads/resume-icon-png-9.png",
   },
   {
     title: "Members Only",
@@ -36,13 +36,13 @@ const projects: Project[] = [
     image:
       "https://media.istockphoto.com/id/917734572/vector/abstract-security-vector-icon.jpg?s=612x612&w=0&k=20&c=N8yIi-rxvoF6x81imlMPZTuVFLlL1Ka1pBrepLVZTRs=",
   },
-  {
-    title: "Portfolio Builder",
-    description:
-      "A personal resume builder that allows you to create and download a custom resume.",
-    github: "https://github.com/cosmicchimp/cv-builder",
-    demo: "https://cosmiccvbuilder.vercel.app/",
-    image: "https://www.freeiconspng.com/uploads/resume-icon-png-9.png",
+    {
+    title: "BingeByte",
+    description: "React-based mock storefront with items and a purchasing process.",
+    github: "https://github.com/cosmicchimp/BingeByte",
+    demo: "https://binge-byte.vercel.app/",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Eo_circle_blue_letter-b.svg/2048px-Eo_circle_blue_letter-b.svg.png",
   },
     {
     title: "PokéMatch",

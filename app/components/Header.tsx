@@ -32,7 +32,7 @@ export default function Header() {
         className={`viewBtn ${isBtnVisible ? 'viewBtn-visible' : ''}`}
         onClick={scrollToAbout}
       >
-        View My Work
+        About Me
       </div>
 
       <img

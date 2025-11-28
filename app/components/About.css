@@ -1,13 +1,13 @@
 .aboutWrapper {
     display:flex;
     flex-direction: column;
-    height:300vh;
+    height:450vh;
     justify-content: center;
     align-items: center; 
 }
 .about-photo {
     width:13rem;
-    height:18rem;
+    height:14rem;
     border-radius:20px;
     margin-top:10rem;
 }
@@ -16,11 +16,11 @@
 }
 .titleBar {
     background-color: #51059e;
-    width:19rem;
+    width:16rem;
     height:2rem;
     position:relative;
     top:-60px;
-    left:30px;
+    left:42px;
     z-index:1;
 }
 .aboutTitle {
@@ -32,10 +32,9 @@
     animation:hover 3000ms ease-in-out infinite;
     padding-bottom:20rem;
     opacity:1;
-    margin-bottom:95rem;
 }
 .aboutWrapper h1 {
-    font-size:60px;
+    font-size:50px;
     text-align:center;
     padding:1.5rem;
 }

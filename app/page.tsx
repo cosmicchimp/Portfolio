@@ -9,6 +9,7 @@
   import StickyHeader from './components/StickyHeader';
   import FadeInOnScroll from './components/FadeInScroll';
   import Projects from './components/Projects';
+  import Contact from './components/Contact';
   export default function PortfolioLanding() {
     return (
       <div className="landing-page">
@@ -16,6 +17,7 @@
         <About/>
         <Languages/> 
         <Projects/>
+        <Contact/>
         <footer className="footer">
           <p>Get in touch: max.lambert429@gmail.com</p>
         </footer>

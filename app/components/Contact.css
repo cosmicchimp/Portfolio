@@ -1,0 +1,61 @@
+
+.titleBox {
+    align-items: center;
+}
+.contactBar {
+    background-color: #51059e;
+    width:27rem;
+    height:2rem;
+    position:relative;
+    top:-33px;
+    left:12px;
+    z-index:1;
+}
+.contactTitle {
+    position:relative;
+    z-index:2;
+    font-size:50px;
+}
+
+.contactWrapper {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.contactBtn {
+  background: white;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.contactBtn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.15);
+}
+
+.contactBtn svg {
+  margin-right: 6px;
+}
+
+/* Title adjustments (optional) */
+.titleBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}

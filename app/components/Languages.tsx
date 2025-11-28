@@ -7,7 +7,7 @@ export default function Languages() {
   };
     return (
         <>        
- <div className="titleBox">
+ <div className="langTitleBox">
                 <h1 className="title">Skills</h1>
                 <div className="langBar"></div>
               </div>       <div className="gridWrapper">

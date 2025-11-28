@@ -10,11 +10,9 @@
   margin-top: 20vh;
   margin-bottom: 70px;
   text-align: center;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   opacity: 0;
   transform: translateY(-30px);
   transition: opacity 1s ease-out, transform 1s ease-out;

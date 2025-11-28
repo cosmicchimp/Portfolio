@@ -13,13 +13,8 @@
     flex-direction: row;
     flex-wrap:wrap;
 }
-.imageBox {
-    display:flex;
-    justify-content: center;
-    width:8rem;
-    height:8rem;
-    border-radius:10px;
-    object-fit: contain;
+.imageBox:hover {
+    background-color: #480453;
 }
 .imageBox > img {
     width: 4rem;
@@ -28,15 +23,16 @@
 }
 .title {
     position:relative;
-    font-size:60px;
+    font-size:50px;
     TEXT-ALIGN:center;
     margin-bottom:5rem;
     margin-top:5rem;
     z-index:2;
+    user-select: none;
 }
 .langBar {
     background-color: #51059e;
-    width:11rem;
+    width:9rem;
     height:2rem;
     position:relative;
     top:-115px;
@@ -64,7 +60,13 @@
   text-align: center;
   border: 4px solid transparent; /* Set a transparent border */
   border-image: linear-gradient(to right, #de15b3 0%, #480453 100%) 1;
-  border-radius: 2rem;
+    display:flex;
+    justify-content: center;
+    width:8rem;
+    height:8rem;
+    object-fit: contain;
+    will-change: background-color;
+    transition: background-color ease-in 300ms;
 }
 @media screen and (max-width:900px) {
     .gridWrapper {
