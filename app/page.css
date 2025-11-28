@@ -73,7 +73,7 @@
 }
 
 .project-content.flip-up {
-  transform: rotateX(-90deg);
+  transform: rotateY(90deg);
   opacity: 0;
 }
 
@@ -85,7 +85,6 @@
 .project-image {
   width: 8rem;
   object-fit: contain;
-  border-radius: 5px;
   margin-bottom: 20px;
 }
 

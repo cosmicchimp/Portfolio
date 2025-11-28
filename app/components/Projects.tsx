@@ -34,7 +34,7 @@ const projects: Project[] = [
     github: "https://github.com/cosmicchimp/Members_Only/tree/main",
     demo: "https://members-only-t456.onrender.com",
     image:
-      "https://img.freepik.com/premium-vector/keyhole-padlock-shield-icon-vector-template_917138-235.jpg",
+      "https://media.istockphoto.com/id/917734572/vector/abstract-security-vector-icon.jpg?s=612x612&w=0&k=20&c=N8yIi-rxvoF6x81imlMPZTuVFLlL1Ka1pBrepLVZTRs=",
   },
   {
     title: "Portfolio Builder",
@@ -43,6 +43,21 @@ const projects: Project[] = [
     github: "https://github.com/cosmicchimp/cv-builder",
     demo: "https://cosmiccvbuilder.vercel.app/",
     image: "https://www.freeiconspng.com/uploads/resume-icon-png-9.png",
+  },
+    {
+    title: "PokéMatch",
+    description:"A react based pokemon memory card card.",
+    github: "https://github.com/cosmicchimp/PokeMatch",
+    demo: "https://maxpokematch.vercel.app/",
+    image: "./pokeball.png",
+  },
+    {
+    title: "Mock Dashboard",
+    description:
+"A mock dashboard built entirely with HTML and CSS to showcase layout and styling skills.",
+    github: "https://github.com/cosmicchimp/practice-dashboard",
+    demo: "https://cosmicchimp.github.io/practice-dashboard/",
+    image: "https://png.pngtree.com/png-vector/20230302/ourmid/pngtree-dashboard-line-icon-vector-png-image_6626604.png",
   },
 ];
 
