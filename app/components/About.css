@@ -20,18 +20,18 @@
     margin-bottom:15rem;
 }
 .aboutWrapper h1 {
-    font-size:2rem;
+    font-size:60px;
     text-align:center;
     padding:1.5rem;
 }
-.aboutWrapper h2 {
-    font-size:1rem;
-}
+
 .aboutBody {
     width:50vw;
     text-align: center;
-    line-height:1.7rem;
+    line-height:2.6rem;
+    font-size:20px;
 }
+
 .projectBtn {
     padding:1rem;
     text-align:center;

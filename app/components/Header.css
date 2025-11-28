@@ -34,7 +34,7 @@
 }
 
 .typewriter {
-  font-size: 1.5rem;
+  font-size: 25px;
 }
 
 /* View Button */
@@ -70,7 +70,6 @@
 .arrowLogo {
   width: 2rem;
   padding-top: 0.5rem;
-
   opacity: 0;                    /* start invisible */
   transform: translateY(-20px);  /* start slightly above */
   transition: opacity 1s ease-out 0.2s, transform 1s ease-out 0.2s; /* add 0.2s delay */

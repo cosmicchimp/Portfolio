@@ -2,7 +2,7 @@ import "./About.css"
 import FadeInOnScroll from "./FadeInScroll"
 export default function About() {
     const scrollToWork = () => {
-        const aboutSection = document.querySelector('.carousel-container');
+        const aboutSection = document.querySelector('.title');
         aboutSection?.scrollIntoView({ 
         behavior: 'smooth',
         block: 'start' 
@@ -12,7 +12,7 @@ export default function About() {
         
         <div className="aboutWrapper">
             <img
-                src={"/IMG_4082.jpg"}
+                src={"./personlogo.png"}
                 className="about-photo"
               />
         <h1 className="aboutTitle">About Me</h1>
@@ -21,7 +21,7 @@ Pursuing a degree in Management of Information Systems at the University of New 
 </h2>
     <FadeInOnScroll>
         <span style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
-            <div className="projectBtn" onClick={scrollToWork}>My Work</div>
+            <div className="projectBtn" onClick={scrollToWork}>My Skills</div>
             <img 
             src={"./downarrow.svg"} 
             className={`arrowLogo`}
