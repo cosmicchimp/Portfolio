@@ -12,6 +12,22 @@
     border-radius:20px;
     margin-top:10rem;
 }
+.titleBox {
+    align-items: center;
+}
+.titleBar {
+    background-color: #51059e;
+    width:19rem;
+    height:2rem;
+    position:relative;
+    top:-60px;
+    left:30px;
+    z-index:1;
+}
+.aboutTitle {
+    position:relative;
+    z-index:2;
+}
 .arrowLogo {
     width:2rem;
     animation:hover 3000ms ease-in-out infinite;

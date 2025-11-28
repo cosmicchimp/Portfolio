@@ -25,6 +25,17 @@
 .projectTitle {
     margin-top:25rem;
     font-size:50px;
+    position: relative;
+    z-index: 2;
+}
+.projBar {
+    background-color: #51059e;
+    width:14rem;
+    height:2rem;
+    position:relative;
+    top:-30px;
+    left:2px;
+    z-index:1;
 }
 .carousel-container {
   max-width: 800px;

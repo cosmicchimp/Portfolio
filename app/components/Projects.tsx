@@ -55,7 +55,10 @@ export default function Projects() {
         
     return (
         <>
-        <h1 className='projectTitle'>My Projects</h1>
+            <div className="titleBox">
+            <h1 className="projectTitle">Projects</h1>
+            <div className="projBar"></div>
+            </div>
         <div className="carousel-container">
           <div className="carousel-card">
             <div className="project-content">

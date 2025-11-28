@@ -7,8 +7,10 @@ export default function Languages() {
   };
     return (
         <>        
-        <h1 className="title">Languages & Skills Learned</h1>
-       <div className="gridWrapper">
+ <div className="titleBox">
+                <h1 className="title">Skills</h1>
+                <div className="langBar"></div>
+              </div>       <div className="gridWrapper">
         <div className="row">
                <div className="imageBox">
              <img src="./javascriptlogo.webp" alt="JavaScript" />
