@@ -59,3 +59,14 @@
   align-items: center;
   margin-top: 5rem;
 }
+
+@media screen and (max-width:500px) {
+    .contactTitle {
+        font-size:45px;
+    }
+    .contactBar {
+        width:24rem;
+        top:-33px;
+        left:16px;
+    }
+}
