@@ -22,21 +22,24 @@
   font-size: 24px;
   color: rgba(255, 255, 255, 0.9);
 }
+
 .projectTitle {
-    margin-top:25rem;
-    font-size:50px;
-    position: relative;
-    z-index: 2;
+  margin-top: 25rem;
+  font-size: 50px;
+  position: relative;
+  z-index: 2;
 }
+
 .projBar {
-    background-color: #51059e;
-    width:14rem;
-    height:2rem;
-    position:relative;
-    top:-33px;
-    left:2px;
-    z-index:1;
+  background-color: #51059e;
+  width: 14rem;
+  height: 2rem;
+  position: relative;
+  top: -33px;
+  left: 2px;
+  z-index: 1;
 }
+
 .carousel-container {
   max-width: 800px;
   width: 100%;
@@ -52,17 +55,36 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top:5rem;
+  margin-top: 5rem;
+
+  /* perspective for 3D flip */
+  perspective: 1200px;
 }
 
 .project-content {
   text-align: center;
   margin-bottom: 30px;
-  height:22rem;
+  height: 22rem;
+
+  /* 3D flip setup */
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.project-content.flip-up {
+  transform: rotateX(-90deg);
+  opacity: 0;
+}
+
+.project-content.flip-down {
+  transform: rotateX(0deg);
+  opacity: 1;
 }
 
 .project-image {
-  font-size: 80px;
+  width: 8rem;
+  object-fit: contain;
+  border-radius: 5px;
   margin-bottom: 20px;
 }
 
@@ -113,6 +135,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
 .nav-btn {
@@ -161,9 +184,4 @@
 .footer p {
   font-size: 16px;
   opacity: 0.9;
-}
-.project-image {
-    width:8rem;
-    object-fit: contain;
-    border-radius:5px
 }
