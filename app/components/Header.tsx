@@ -14,7 +14,7 @@ export default function Header() {
   }, []);
 
   const scrollToAbout = () => {
-    const aboutSection = document.querySelector('.aboutWrapper');
+    const aboutSection = document.querySelector('.about-photo');
     aboutSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
