@@ -1,3 +1,4 @@
+/* Landing page setup */
 .landing-page {
   background: linear-gradient(180deg, #bb30fb 0%, #6a1cb8 100%);
   display: flex;
@@ -23,6 +24,7 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
+/* Project section title */
 .projectTitle {
   margin-top: 25rem;
   font-size: 50px;
@@ -36,14 +38,16 @@
   height: 2rem;
   position: relative;
   top: -33px;
-  left: 2px;
+  left: 7px;
   z-index: 1;
 }
 
+/* Carousel cards (existing) */
 .carousel-container {
   max-width: 800px;
   width: 100%;
   position: relative;
+  margin-bottom:3rem;
 }
 
 .carousel-card {
@@ -57,16 +61,13 @@
   justify-content: space-between;
   margin-top: 5rem;
 
-  /* perspective for 3D flip */
-  perspective: 1200px;
+  perspective: 1200px; /* 3D perspective */
 }
 
 .project-content {
   text-align: center;
   margin-bottom: 30px;
   height: 22rem;
-
-  /* 3D flip setup */
   transform-style: preserve-3d;
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
@@ -175,6 +176,7 @@
   background: #667eea;
 }
 
+/* Footer */
 .footer {
   margin-top: 20vh;
   text-align: center;
@@ -184,4 +186,77 @@
 .footer p {
   font-size: 16px;
   opacity: 0.9;
+}
+
+/* -------------------------- */
+/* Project Stacklist / Accordion */
+/* -------------------------- */
+
+.projectListWrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projectItem {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.projectItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.projectHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+.projectHeader .project-image {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.projectHeader .project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.projectDetails {
+  padding: 1rem 1.5rem 1.5rem;
+  border-top: 1px solid #eee;
+  background-color: #fafafa;
+
+  /* Flip-up entry */
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.projectItem.open .projectDetails {
+  transform: rotateX(0deg);
+  opacity: 1;
+}
+
+.projectDescription {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
 }

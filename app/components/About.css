@@ -1,10 +1,9 @@
 .aboutWrapper {
     display:flex;
     flex-direction: column;
-    height:170vh;
+    height:300vh;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
 }
 .about-photo {
     width:13rem;

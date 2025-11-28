@@ -24,7 +24,8 @@ const projects: Project[] = [
     description: "React-based mock storefront with items and a purchasing process.",
     github: "https://github.com/cosmicchimp/BingeByte",
     demo: "https://binge-byte.vercel.app/",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Eo_circle_blue_letter-b.svg/2048px-Eo_circle_blue_letter-b.svg.png",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Eo_circle_blue_letter-b.svg/2048px-Eo_circle_blue_letter-b.svg.png",
   },
   {
     title: "Members Only",
@@ -32,7 +33,8 @@ const projects: Project[] = [
       "A proof-of-concept message board featuring secure account creation, user logins, admin permissions, and additional authentication features.",
     github: "https://github.com/cosmicchimp/Members_Only/tree/main",
     demo: "https://members-only-t456.onrender.com",
-    image:"https://img.freepik.com/premium-vector/keyhole-padlock-shield-icon-vector-template_917138-235.jpg"
+    image:
+      "https://img.freepik.com/premium-vector/keyhole-padlock-shield-icon-vector-template_917138-235.jpg",
   },
   {
     title: "Portfolio Builder",
@@ -45,15 +47,14 @@ const projects: Project[] = [
 ];
 
 export default function Projects() {
+  // ---- Carousel state ----
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [flip, setFlip] = useState<"" | "flip-up" | "flip-down">("");
-
   const FLIP_DURATION = 400;
 
   const flipToSlide = (newIndex: number) => {
     if (isAnimating || newIndex === currentSlide) return;
-
     setIsAnimating(true);
     setFlip("flip-up");
 
@@ -80,7 +81,13 @@ export default function Projects() {
     return () => clearTimeout(t);
   }, [currentSlide, isAnimating]);
 
-  const p = projects[currentSlide];
+  const carouselProject = projects[currentSlide];
+
+  // ---- Stacklist state ----
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const toggleProject = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   return (
     <>
@@ -89,25 +96,31 @@ export default function Projects() {
         <div className="projBar"></div>
       </div>
 
+      {/* Flipping Carousel */}
       <div className="carousel-container">
         <div className="carousel-card">
           <div className={`project-content ${flip}`}>
-            <img src={p.image} alt={p.title} className="project-image" />
-            <h2 className="project-title">{p.title}</h2>
-            <p className="project-description">{p.description}</p>
+            <img
+              src={carouselProject.image}
+              alt={carouselProject.title}
+              className="project-image"
+            />
+            <h2 className="project-title">{carouselProject.title}</h2>
+            <p className="project-description">
+              {carouselProject.description}
+            </p>
 
             <div className="project-links">
               <a
-                href={p.github}
+                href={carouselProject.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-github"
               >
                 <Github size={20} /> GitHub
               </a>
-
               <a
-                href={p.demo}
+                href={carouselProject.demo}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-demo"
@@ -117,6 +130,50 @@ export default function Projects() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Stacklist Accordion */}
+      <div className="projectListWrapper">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className={`projectItem ${openIndex === index ? "open" : ""}`}
+            onClick={() => toggleProject(index)}
+          >
+            <div className="projectHeader">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+              />
+              <h2 className="project-title">{project.title}</h2>
+            </div>
+
+            {openIndex === index && (
+              <div className="projectDetails">
+                <p className="projectDescription">{project.description}</p>
+                <div className="project-links">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-github"
+                  >
+                    <Github size={20} /> GitHub
+                  </a>
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-demo"
+                  >
+                    <ExternalLink size={20} /> Live Demo
+                  </a>
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
       </div>
     </>
   );
