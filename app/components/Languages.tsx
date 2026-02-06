@@ -1,6 +1,7 @@
-import "./Languages.css"
+import "../styles/Languages.css"
 import FadeInOnScroll from "./FadeInScroll"
 export default function Languages() {
+  const skills = [{title:"JavaScript", img:""}, "TypeScript", "Python", "NodeJS", "Docker", "AWS", "Java", "Spring Boot", "PostgreSQL", "React", "React Native", "Git", "NextJS"]
       const scrollToWork = () => {
     const aboutSection = document.querySelector('.projectTitle');
     aboutSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -10,7 +11,8 @@ export default function Languages() {
  <div className="langTitleBox">
                 <h1 className="title">Skills</h1>
                 <div className="langBar"></div>
-              </div>       <div className="gridWrapper">
+              </div>       
+              <div className="gridWrapper">
         <div className="row">
                <div className="imageBox">
              <img src="./javascriptlogo.webp" alt="JavaScript" />
@@ -50,8 +52,8 @@ export default function Languages() {
       <p>Spring Boot</p>
     </div>
      <div className="imageBox">
-      <img src="./fastapilogo.webp" alt="FastAPI" />
-      <p>FastAPI</p>
+      <img src="./postgreslogo.png" alt="FastAPI" />
+      <p>PostgreSQL</p>
     </div>
   </div>
 
@@ -75,6 +77,18 @@ export default function Languages() {
       <img src="./nextjslogo.png" alt="nextJS" />
       <p>NextJS</p>
     </div>
+  </div>
+
+  {/* This is the double column that will become visible once in a mobile view */}
+  <div className='doubleColumn'>
+      {/* First column */}
+      <div className="columnOne">
+
+      </div>
+      {/* Second column */}
+      <div className="columnTwo">
+
+      </div>
   </div>
 </div>
   <FadeInOnScroll>

@@ -1,12 +1,7 @@
-/* Global font */
-* {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-}
 
 /* Header container */
 .header {
-  height: 400vh;
+  height: 200vh;
   margin-top: 20vh;
   margin-bottom: 70px;
   text-align: center;

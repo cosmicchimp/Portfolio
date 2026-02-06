@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, Github, ExternalLink } from "lucide-react";
-import "../page.css";
+import "../styles/Project.modules.css";
 
 interface Project {
   title: string;
@@ -106,13 +106,12 @@ export default function Projects() {
 
   return (
     <>
-      <div className="titleBox">
+      {/* Flipping Carousel */}
+      <div className="carousel-container">
+        <div className="titleBox">
         <h1 className="projectTitle">Projects</h1>
         <div className="projBar"></div>
       </div>
-
-      {/* Flipping Carousel */}
-      <div className="carousel-container">
         <div className="carousel-card">
           <div className={`project-content ${flip}`}>
             <img

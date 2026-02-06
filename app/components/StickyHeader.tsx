@@ -1,4 +1,4 @@
-import "./StickyHeader.css"
+import "../styles/StickyHeader.css"
 export default function StickyHeader() {
     return (
         <div className="stickyHeader">

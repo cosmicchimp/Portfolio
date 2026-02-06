@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import './Header.css';
+import '../styles/Header.css';
 import Typewriter from './Typewriter';
 
 export default function Header() {

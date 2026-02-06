@@ -1,4 +1,4 @@
-import "./About.css"
+import "../styles/About.css"
 import FadeInOnScroll from "./FadeInScroll"
 export default function About() {
     const scrollToWork = () => {
@@ -13,7 +13,7 @@ export default function About() {
         
         <div className="aboutWrapper">
             <img
-                src={"./personlogo.png"}
+                src={"./onstage.jpg"}
                 className="about-photo"
               />
               <div className="titleBox">
@@ -21,10 +21,10 @@ export default function About() {
                 <div className="titleBar"></div>
               </div>
 <h2 className="aboutBody">
-Pursuing a degree in Management of Information Systems at the University of New Mexico’s Anderson School of Management, I’m passionate about software engineering, web development, cloud solutions, and solving complex problems.
-<br></br><br></br>
-As the Principal Software Engineer of SquareScan, an award-winning SaaS startup serving real estate and contracting companies, I work across the full stack building mobile applications and platform services that support our users and push the product forward. I’m actively seeking opportunities to continue growing as a developer.
-</h2>
+I have a Bachelor’s degree in Management of Information Systems from the University of New Mexico, with a strong focus on software engineering, full-stack development, and cloud solutions.<br></br><br></br>
+As a Principal Software Engineer at SquareScan, an award-winning SaaS platform serving real estate and contracting companies, I work across the full stack building and deploying end-to-end applications.<br></br><br></br>
+I bring hands-on experience with Java, JavaScript, TypeScript, Python, and SQL, alongside AWS, Docker, distributed systems, auto-scaling architectures, and containerized deployments. My work as a programmer and entrepreneur has earned multiple university awards, and I’m now seeking opportunities to build impactful systems while continuing to grow as a developer.</h2>
+
     <FadeInOnScroll>
         <span style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
             <div className="projectBtn" onClick={scrollToWork}>My Skills</div>
