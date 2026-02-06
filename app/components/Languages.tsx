@@ -19,13 +19,13 @@ export default function Languages() {
               {/* First row of icons */}
               <div className="row">
                 {skills.map((skill, i) =>
-                i <= 1 ? (
-                  <div className="imageBox" key={i}>
-                    <img src={skill.src} alt={skill.title} />
-                    <p>{skill.title}</p>
-                  </div>
-                ) : null
-              )}
+                  i <= 1 ? (
+                    <div className="imageBox" key={i}>
+                      <img src={skill.src} alt={skill.title} />
+                      <p>{skill.title}</p>
+                    </div>
+                  ) : null
+                )}
               </div>
 
               {/* Second row of icons */}
@@ -42,73 +42,77 @@ export default function Languages() {
 
               {/* Third row of icons */}
               <div className="row">
-                      {skills.map((skill, i) =>
-                i >= 5 && i <= 9 ? (
-                  <div className="imageBox" key={i}>
-                    <img src={skill.src} alt={skill.title} />
-                    <p>{skill.title}</p>
-                  </div>
-                ) : null
-              )}
+                {skills.map((skill, i) =>
+                    i >= 5 && i <= 9 ? (
+                      <div className="imageBox" key={i}>
+                        <img src={skill.src} alt={skill.title} />
+                        <p>{skill.title}</p>
+                      </div>
+                    ) : null
+                  )}
               </div>
 
               {/* Fourth of row icons */}
               <div className="row">
-                      {skills.map((skill, i) =>
-                i >= 10 && i <= 12 ? (
-                  <div className="imageBox" key={i}>
-                    <img src={skill.src} alt={skill.title} />
-                    <p>{skill.title}</p>
-                  </div>
-                ) : null
-              )}
+                  {skills.map((skill, i) =>
+                    i >= 10 && i <= 12 ? (
+                      <div className="imageBox" key={i}>
+                        <img src={skill.src} alt={skill.title} />
+                        <p>{skill.title}</p>
+                      </div>
+                    ) : null
+                  )}
               </div>
 
               {/* Fifth row of icons */}
             <div className="row">
-                      {skills.map((skill, i) =>
-                i >= 13 ? (
+              {skills.map((skill, i) =>
+                  i >= 13 ? (
+                    <div className="imageBox" key={i}>
+                      <img src={skill.src} alt={skill.title} />
+                      <p>{skill.title}</p>
+                    </div>
+                  ) : null
+                )}
+            </div>
+          </div>
+          
+          {/* This is the double column that will become visible once in a mobile view */}
+          <div className='tripleColumn'>
+              {/* First column */}
+            <div className="columnOne">
+              {skills.map((skill, i) =>
+                i <= 4 ? (
                   <div className="imageBox" key={i}>
                     <img src={skill.src} alt={skill.title} />
                     <p>{skill.title}</p>
                   </div>
-                ) : null
-              )}
+                  ) : null
+                )}
             </div>
-          </div>
-          {/* This is the double column that will become visible once in a mobile view */}
-          <div className='tripleColumn'>
-              {/* First column */}
-              <div className="columnOne">
-                {skills.map((skill, i) =>
-              i <= 4 ? (
-                <div className="imageBox" key={i}>
-                  <img src={skill.src} alt={skill.title} />
-                  <p>{skill.title}</p>
-                </div>
-              ) : null
-            )}
-              </div>
+
               {/* Second column */}
               <div className="columnTwo">
-     {skills.map((skill, i) =>
-              i <= 9 && i > 4? (
-                <div className="imageBox" key={i}>
-                  <img src={skill.src} alt={skill.title} />
-                  <p>{skill.title}</p>
-                </div>
-              ) : null
-            )}
+                {skills.map((skill, i) =>
+                  i <= 9 && i > 4? (
+                    <div className="imageBox" key={i}>
+                      <img src={skill.src} alt={skill.title} />
+                      <p>{skill.title}</p>
+                    </div>
+                  ) : null
+                )}
               </div>
-               <div className="columnThree">
-     {skills.map((skill, i) =>
-              i <= 14 && i > 9 ? (
-                <div className="imageBox" key={i}>
-                  <img src={skill.src} alt={skill.title} />
-                  <p>{skill.title}</p>
-                </div>
-              ) : null
-            )}
+
+              {/* Third column */}
+              <div className="columnThree">
+                {skills.map((skill, i) =>
+                  i <= 14 && i > 9 ? (
+                    <div className="imageBox" key={i}>
+                      <img src={skill.src} alt={skill.title} />
+                      <p>{skill.title}</p>
+                    </div>
+                  ) : null
+                )}
               </div>
           </div>
         </div>
