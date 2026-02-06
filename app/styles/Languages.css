@@ -13,10 +13,6 @@
     flex-direction: row;
     flex-wrap:wrap;
 }
-.imageBox:hover {
-    background-color: #f94fe2;
-    border-radius:20px;
-}
 .imageBox > img {
     width: 4rem;
     height:4rem;
@@ -79,7 +75,12 @@
     visibility: hidden;
     position: absolute;
 }
-
+@media (hover: hover) and (pointer: fine) {
+    .imageBox:hover {
+        background-color: #f94fe2;
+        border-radius: 20px;
+    }
+}
 @media screen and (max-width:900px) {
     .rowWrapper {
         visibility: hidden;
@@ -104,5 +105,10 @@
     }
     .tripleColumn > div > div {
         width:28vw;
+    }
+    .imageBox:hover {
+        background-color: transparent;
+        border-radius:0;
+        transition: none;
     }
 }
