@@ -46,7 +46,12 @@
   gap: 20px; /* space between rows */
   align-items: center;
 }
-
+.rowWrapper {
+     display: flex;
+  flex-direction: row;
+  gap: 20px; /* space between rows */
+  align-items: center;
+}
 .row {
   display: flex;
   flex-direction: column;
@@ -70,9 +75,27 @@
     will-change: background-color;
     transition: background-color ease-in 300ms, border-radius 300ms ease-out;
 }
+.tripleColumn {
+    visibility: hidden;
+    position: absolute;
+}
 
 @media screen and (max-width:900px) {
-    .gridWrapper {
-        flex-direction: column !important;
+    .rowWrapper {
+        visibility: hidden;
+        position:absolute;
+    }
+    .tripleColumn {
+        position: relative;
+        visibility: visible;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        gap:20px;
+    }
+    .tripleColumn > div {
+        display:flex;
+        flex-direction: column;
+        gap:20px;
     }
 }
