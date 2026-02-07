@@ -13,6 +13,7 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+  color-scheme: light;
 }
 
 body {
@@ -35,6 +36,6 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
 }

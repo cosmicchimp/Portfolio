@@ -28,10 +28,12 @@
 
 .typewriter {
   font-size: 25px;
+  color:white;
 }
 
 /* View Button */
 .viewBtn {
+  color:white;
   padding: 1rem;
   width: 9rem;
   margin-top: 6rem;

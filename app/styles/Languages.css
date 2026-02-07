@@ -26,6 +26,7 @@
     margin-top:20rem;
     z-index:2;
     user-select: none;
+    color:white;
 }
 .langBar {
     background-color: #51059e;
@@ -62,6 +63,7 @@
     align-items: center;
     text-align: center;
     border-radius:0px;
+    color:white;
     /* border-image: linear-gradient(to right, #de15b3 0%, #480453 100%) 1; */
     border:1.4px black solid;
     display:flex;
