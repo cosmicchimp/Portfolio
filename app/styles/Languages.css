@@ -13,10 +13,6 @@
     flex-direction: row;
     flex-wrap:wrap;
 }
-.imageBox:hover {
-    background-color: #f94fe2;
-    border-radius:20px;
-}
 .imageBox > img {
     width: 4rem;
     height:4rem;
@@ -47,7 +43,12 @@
   gap: 20px; /* space between rows */
   align-items: center;
 }
-
+.rowWrapper {
+     display: flex;
+  flex-direction: row;
+  gap: 20px; /* space between rows */
+  align-items: center;
+}
 .row {
   display: flex;
   flex-direction: column;
@@ -71,9 +72,44 @@
     will-change: background-color;
     transition: background-color ease-in 300ms, border-radius 300ms ease-out;
 }
-
+.tripleColumn {
+    visibility: hidden;
+    position: absolute;
+}
+@media (hover: hover) and (pointer: fine) {
+    .imageBox:hover {
+        background-color: #f94fe2;
+        border-radius: 20px;
+    }
+}
 @media screen and (max-width:900px) {
-    .gridWrapper {
-        flex-direction: column !important;
+    .rowWrapper {
+        visibility: hidden;
+        position: absolute; /* does not affect other content */
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow-x: hidden; 
+    }
+    .tripleColumn {
+        position: relative;
+        visibility: visible;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        gap:20px;
+    }
+    .tripleColumn > div {
+        display:flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .tripleColumn > div > div {
+        width:28vw;
+    }
+    .imageBox:hover {
+        background-color: transparent;
+        border-radius:0;
+        transition: none;
     }
 }

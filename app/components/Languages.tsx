@@ -1,107 +1,132 @@
 import "../styles/Languages.css"
 import FadeInOnScroll from "./FadeInScroll"
 export default function Languages() {
-  const skills = [{title:"JavaScript", img:""}, "TypeScript", "Python", "NodeJS", "Docker", "AWS", "Java", "Spring Boot", "PostgreSQL", "React", "React Native", "Git", "NextJS"]
+  const skills = [{title:"JavaScript", src:"./javascriptlogo.webp"},{title:"Bash", src:"./bashlogo.png"}, {title:"TypeScript", src:"./typescriptlogo.png"}, {title:"Python", src:"pythonlogo.png"}, {title:"NodeJS", src:"nodejslogo.png"}, {title:"Docker",src:"dockerlogo.png"}, {title:"AWS", src:"awslogo.png"}, {title:"Java", src:"javalogo.png"}, {title:"Spring Boot",src:"springbootlogo.png"}, {title:"PostgreSQL", src:"postgreslogo.png"}, {title:"React", src:"reactlogo.png"}, {title:"React Native", src:"reactnativelogo.png"}, {title:"Git", src:"gitlogo.png"}, {title:"Powershell", src:"powershelllogo.png"}, {title:"NextJS", src:"nextjslogo.png"}]
       const scrollToWork = () => {
     const aboutSection = document.querySelector('.projectTitle');
     aboutSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
+  
     return (
         <>        
- <div className="langTitleBox">
-                <h1 className="title">Skills</h1>
-                <div className="langBar"></div>
-              </div>       
-              <div className="gridWrapper">
-        <div className="row">
-               <div className="imageBox">
-             <img src="./javascriptlogo.webp" alt="JavaScript" />
-             <p>JavaScript</p>
-         </div>
+          <div className="langTitleBox">
+            <h1 className="title">Skills</h1>
+            <div className="langBar"></div>
+          </div>
+
+          <div className="gridWrapper">
+            <div className="rowWrapper">
+              {/* First row of icons */}
+              <div className="row">
+                {skills.map((skill, i) =>
+                  i <= 1 ? (
+                    <div className="imageBox" key={i}>
+                      <img src={skill.src} alt={skill.title} />
+                      <p>{skill.title}</p>
+                    </div>
+                  ) : null
+                )}
+              </div>
+
+              {/* Second row of icons */}
+              <div className="row">
+                {skills.map((skill, i) =>
+                  i >= 2 && i <= 4 ? (
+                    <div className="imageBox" key={i}>
+                      <img src={skill.src} alt={skill.title} />
+                      <p>{skill.title}</p>
+                    </div>
+                  ) : null
+                )}
+              </div>
+
+              {/* Third row of icons */}
+              <div className="row">
+                {skills.map((skill, i) =>
+                    i >= 5 && i <= 9 ? (
+                      <div className="imageBox" key={i}>
+                        <img src={skill.src} alt={skill.title} />
+                        <p>{skill.title}</p>
+                      </div>
+                    ) : null
+                  )}
+              </div>
+
+              {/* Fourth of row icons */}
+              <div className="row">
+                  {skills.map((skill, i) =>
+                    i >= 10 && i <= 12 ? (
+                      <div className="imageBox" key={i}>
+                        <img src={skill.src} alt={skill.title} />
+                        <p>{skill.title}</p>
+                      </div>
+                    ) : null
+                  )}
+              </div>
+
+              {/* Fifth row of icons */}
+            <div className="row">
+              {skills.map((skill, i) =>
+                  i >= 13 ? (
+                    <div className="imageBox" key={i}>
+                      <img src={skill.src} alt={skill.title} />
+                      <p>{skill.title}</p>
+                    </div>
+                  ) : null
+                )}
+            </div>
+          </div>
+          
+          {/* This is the double column that will become visible once in a mobile view */}
+          <div className='tripleColumn'>
+              {/* First column */}
+            <div className="columnOne">
+              {skills.map((skill, i) =>
+                i <= 4 ? (
+                  <div className="imageBox" key={i}>
+                    <img src={skill.src} alt={skill.title} />
+                    <p>{skill.title}</p>
+                  </div>
+                  ) : null
+                )}
+            </div>
+
+              {/* Second column */}
+              <div className="columnTwo">
+                {skills.map((skill, i) =>
+                  i <= 9 && i > 4? (
+                    <div className="imageBox" key={i}>
+                      <img src={skill.src} alt={skill.title} />
+                      <p>{skill.title}</p>
+                    </div>
+                  ) : null
+                )}
+              </div>
+
+              {/* Third column */}
+              <div className="columnThree">
+                {skills.map((skill, i) =>
+                  i <= 14 && i > 9 ? (
+                    <div className="imageBox" key={i}>
+                      <img src={skill.src} alt={skill.title} />
+                      <p>{skill.title}</p>
+                    </div>
+                  ) : null
+                )}
+              </div>
+          </div>
         </div>
-  <div className="row">
-    <div className="imageBox">
-      <img src="./typescriptlogo.png" alt="TypeScript" />
-      <p>TypeScript</p>
-    </div>
-    <div className="imageBox">
-      <img src="./pythonlogo.png" alt="Python" />
-      <p>Python</p>
-    </div>
-     <div className="imageBox">
-      <img src="./nodejslogo.png" alt="NodeJS" />
-      <p>NodeJS</p>
-    </div>
-  </div>
-
-  <div className="row">
-    <div className="imageBox">
-      <img src="./dockerlogo.png" alt="Docker" />
-      <p>Docker</p>
-    </div>
-    <div className="imageBox">
-      <img src="./awslogo.png" alt="AWS" />
-      <p>AWS</p>
-    </div>
-    <div className="imageBox">
-      <img src="./javalogo.png" alt="Java" />
-      <p>Java</p>
-    </div>
-    <div className="imageBox">
-      <img src="./springbootlogo.png" alt="Spring Boot" />
-      <p>Spring Boot</p>
-    </div>
-     <div className="imageBox">
-      <img src="./postgreslogo.png" alt="FastAPI" />
-      <p>PostgreSQL</p>
-    </div>
-  </div>
-
-  <div className="row">
-    <div className="imageBox">
-      <img src="./reactlogo.png" alt="React" />
-      <p>React</p>
-    </div>
-    <div className="imageBox">
-      <img src="./reactnativelogo.png" alt="React Native" />
-      <p>React Native</p>
-    </div>
-       <div className="imageBox">
-      <img src="./gitlogo.png" alt="Spring Boot" />
-      <p>Git</p>
-    </div>
-   
-  </div>
-  <div className="row">
-      <div className="imageBox">
-      <img src="./nextjslogo.png" alt="nextJS" />
-      <p>NextJS</p>
-    </div>
-  </div>
-
-  {/* This is the double column that will become visible once in a mobile view */}
-  <div className='doubleColumn'>
-      {/* First column */}
-      <div className="columnOne">
-
-      </div>
-      {/* Second column */}
-      <div className="columnTwo">
-
-      </div>
-  </div>
-</div>
-  <FadeInOnScroll>
-        <span style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
-            <div className="projectBtn" onClick={scrollToWork}>My Work</div>
-            <img 
-            src={"./downarrow.svg"} 
-            className={`arrowLogo`}
-            onClick={scrollToWork}
-            alt="Scroll down"
-            />
-        </span>
-    </FadeInOnScroll>
-</>
+        <FadeInOnScroll>
+          <span style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
+              <div className="projectBtn" onClick={scrollToWork}>My Work</div>
+              <img 
+              src={"./downarrow.svg"} 
+              className={`arrowLogo`}
+              onClick={scrollToWork}
+              alt="Scroll down"
+              />
+          </span>
+        </FadeInOnScroll>
+    </>
     )
 }
