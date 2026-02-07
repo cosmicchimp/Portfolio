@@ -20,9 +20,10 @@
     width:16rem;
     height:2rem;
     position:relative;
-    top:-60px;
-    left:24px;
+    top:-57px;
+    left:22px;
     z-index:1;
+    border-radius:5px;
 }
 .aboutTitle {
     position:relative;

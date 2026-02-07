@@ -13,6 +13,7 @@
   top: -31px;
   left: 22px;
   z-index: 1;
+  border-radius:5px;
 }
 
 /* Carousel cards (existing) */
@@ -46,12 +47,12 @@
 }
 
 .project-content.flip-up {
-  transform: rotateY(90deg);
+  transform: scale(0);
   opacity: 0;
 }
 
 .project-content.flip-down {
-  transform: rotateX(0deg);
+  transform: scale(1);
   opacity: 1;
 }
 

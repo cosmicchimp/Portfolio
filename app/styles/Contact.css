@@ -8,8 +8,9 @@
     height:2rem;
     position:relative;
     top:-33px;
-    left:12px;
+    left:20px;
     z-index:1;
+    border-radius:5px;
 }
 .contactTitle {
     position:relative;
@@ -65,7 +66,7 @@
     }
     .contactBar {
         width:21rem;
-        top:-33px;
+        top:-29px;
         left:16px;
     }
 }

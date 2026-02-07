@@ -37,8 +37,9 @@
     height:2rem;
     position:relative;
     top:-4.2rem;
-    left:22px;
+    left:18px;
     z-index:1;
+    border-radius:5px;
 }
 .gridWrapper {
   display: flex;

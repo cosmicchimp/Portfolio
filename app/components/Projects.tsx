@@ -50,15 +50,7 @@ const projects: Project[] = [
     github: "https://github.com/cosmicchimp/PokeMatch",
     demo: "https://maxpokematch.vercel.app/",
     image: "./pokeball.png",
-  },
-    {
-    title: "Mock Dashboard",
-    description:
-"A mock dashboard built entirely with HTML and CSS to showcase layout and styling skills.",
-    github: "https://github.com/cosmicchimp/practice-dashboard",
-    demo: "https://cosmicchimp.github.io/practice-dashboard/",
-    image: "https://png.pngtree.com/png-vector/20230302/ourmid/pngtree-dashboard-line-icon-vector-png-image_6626604.png",
-  },
+  }
 ];
 
 export default function Projects() {
